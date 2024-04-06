@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('Pre-Build') { 
             steps {
-                sh 'npm install' 
+                sh 'npm install'
+		sh 'npm --version'
             }
         }
 
