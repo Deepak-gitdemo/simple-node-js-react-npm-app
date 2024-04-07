@@ -5,14 +5,14 @@ pipeline {
     stages {
         stage('Pre-Build') { 
             steps {
-                sh 'npm install'
-		sh 'npm --version'
+                bat 'npm install'
+		bat 'npm --version'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
